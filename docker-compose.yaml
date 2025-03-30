@@ -1,0 +1,32 @@
+services:
+  api:
+    image: php:8.3-apache
+    container_name: dev_api
+    volumes:
+      - ./api:/var/www/html
+    ports:
+      - "81:80"
+    networks:
+      - public_dev_network
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html
+    restart: always
+
+  web:
+    image: php:8.3-apache
+    container_name: dev_web
+    volumes:
+      - ./web:/var/www/html
+    ports:
+      - "82:80"
+    depends_on:
+      - api
+    networks:
+      - public_dev_network
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html
+    restart: always
+
+networks:
+  public_dev_network:
+    driver: bridge
