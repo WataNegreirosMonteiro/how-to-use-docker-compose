@@ -33,10 +33,10 @@ Here is an overview of the project structure:
 ```
 /project-root
 ├── api/
-│   └── index.php       # Your PHP API code
+│   └── index.php       
 ├── web/
-│   └── index.php       # Your PHP Web code
-└── docker-compose.yml  # Docker Compose configuration
+│   └── index.php       
+└── docker-compose.yml  
 ```
 
 - The `api/` folder contains the PHP API service files.
