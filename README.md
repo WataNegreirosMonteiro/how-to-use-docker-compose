@@ -1,9 +1,12 @@
 
 ---
 
-# Project Setup for PHP API and Web Service with Docker
+# Project Setup for PHP API and Web Service with Docker Compose
 
 This project uses Docker Compose to set up two services: a **PHP API** and a **PHP Web** service, both using the `php:8.3-apache` image. These services communicate over a Docker bridge network, and you can access the API and Web services on ports **81** and **82** respectively.
+
+![ChatGPT Image 29 de mar  de 2025, 19_55_49](https://github.com/user-attachments/assets/32ccbab2-039d-47c1-8d97-04dcca7d782f)
+
 
 ---
 
